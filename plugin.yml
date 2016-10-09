@@ -1,0 +1,12 @@
+name: MyPrefix
+main: MyPrefix\MyPrefix
+version: 1.2.2
+api: [1.10.0]
+author: RexRed6802
+description: your displayed name
+
+
+commands:
+ prefix:
+  usage: /prefix <help>
+  description: 稱號幫助
