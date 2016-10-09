@@ -56,7 +56,7 @@ break;
 case "np":
 $this->config->set($args[1],$args[2]);
 $this->config->save(true);
-$sender->sendMessage("succeed create a new prefix {$args[1]} cost{$args[2]}");
+$sender->sendMessage("succeed create a new prefix {$args[1]} cost {$args[2]}");
 break;
 case "set":
 $ppconf = new Config($this->getDataFolder().$sender->getName().".yml",Config::YAML,array());
