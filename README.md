@@ -26,16 +26,16 @@ Command:
 - /prefix help [commands helper]
 - /prefix np <prefix> <cost> [(op) create a new preifx]
 - /prefix set <prefixID> [change your own prefix]
-- /prefix mylist [see your own all prefix]
+- /prefix mylist [see all of your prefix]
 
 Features:
-- It can use ~
+- Only basic features for now
 
 Todo:
 - More commands and features
 
 API:
-- $this->MyPrefix->getPrefix($p); [get player prefix and use this function in chat event]
+- $this->MyPrefix->getPrefix($p); [get player's prefix and use this function in chat event]
 
-Donate url:
+Donation URL:
 - https://pl.zxda.net/plugins/317.html
