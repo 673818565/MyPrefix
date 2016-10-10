@@ -43,7 +43,7 @@ $sender->sendmessage("/prefix help");
 switch($args[0]){
 case "help": 
 $sender->sendMessage("/prefix buy <prefix> -Buy a prefix");
-$sender->sendMessage("/prefix mylist -Look your all prefix");
+$sender->sendMessage("/prefix mylist -Look all of your prefix");
 $sender->sendMessage("/prefix np <prefix> <money> --(OP) create a new prefix");
 $sender->sendMessage("/prefix set <prefix> -- Change your prefix");
 break;
@@ -56,7 +56,7 @@ break;
 case "np":
 $this->config->set($args[1],$args[2]);
 $this->config->save(true);
-$sender->sendMessage("succeed create a new prefix {$args[1]} cost {$args[2]}");
+$sender->sendMessage("Successfully created the new prefix {$args[1]}, cost {$args[2]}");
 break;
 case "set":
 $ppconf = new Config($this->getDataFolder().$sender->getName().".yml",Config::YAML,array());
@@ -65,7 +65,7 @@ if($ppconf->exists($args[1])){
 $ppconf->set("using",$args[1]);
 }
 }
-$sender->sendMessage("succeed change your prefix");
+$sender->sendMessage("Successfully changed your prefix");
 break;
 }
 break;
